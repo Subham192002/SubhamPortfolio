@@ -13,8 +13,7 @@ interface Blog {
   providedIn: 'root'
 })
 export class BlogService {
-  // private jsonUrl = `${environment.url}/assets/json/blogs.json`;
-  private jsonUrl = `http://localhost:4200/assets/json/blogs.json`;
+  private jsonUrl = `assets/json/blogs.json`;
   public state = signal<Blog>({ blogs: []});
   public blogs: Signal<BlogSchema[]> = computed(() => this.state().blogs);
   private http = inject(HttpClient)

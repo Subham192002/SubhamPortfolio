@@ -14,7 +14,7 @@ export class LanguageToolService {
   constructor() {
     this.getAll();
   }
-  private jsonUrl = `http://localhost:4200/assets/json/language-tools.json`;
+  private jsonUrl = `assets/json/language-tools.json`;
 
   public state = signal<LanguageToolState>({ data: [] });
   public languageTools: Signal<LanguageTool[]> = computed(
