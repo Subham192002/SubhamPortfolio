@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Java",
+    "url": "https://www.java.com/"
+  },
+  {
+    "name": "Spring Boot",
+    "url": "https://spring.io/projects/spring-boot"
+  },
+  {
+    "name": "Spring Security",
+    "url": "https://spring.io/projects/spring-security"
+  },
+  {
+    "name": "Hibernate",
+    "url": "https://hibernate.org/"
+  },
+  {
+    "name": "JPA",
+    "url": "https://jakarta.ee/specifications/persistence/"
+  },
+  {
+    "name": "Microservices",
+    "url": "https://microservices.io/"
+  },
+  {
+    "name": "Angular",
+    "url": "https://angular.dev/"
+  },
+  {
+    "name": "TypeScript",
+    "url": "https://www.typescriptlang.org/"
+  },
+  {
+    "name": "JavaScript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "name": "HTML",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    "name": "CSS",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "name": "Bootstrap",
+    "url": "https://getbootstrap.com/"
+  },
+  {
+    "name": "PostgreSQL",
+    "url": "https://www.postgresql.org/"
+  },
+  {
+    "name": "Oracle",
+    "url": "https://www.oracle.com/database/"
+  },
+  {
+    "name": "MySQL",
+    "url": "https://www.mysql.com/"
+  },
+  {
+    "name": "Docker",
+    "url": "https://www.docker.com/"
+  },
+  {
+    "name": "Git",
+    "url": "https://git-scm.com/"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/"
+  },
+  {
+    "name": "GitLab",
+    "url": "https://gitlab.com/"
+  },
+  {
+    "name": "Maven",
+    "url": "https://maven.apache.org/"
+  },
+  {
+    "name": "Swagger",
+    "url": "https://swagger.io/"
+  },
+  {
+    "name": "Postman",
+    "url": "https://www.postman.com/"
+  },
+  {
+    "name": "JUnit",
+    "url": "https://junit.org/junit5/"
+  },
+  {
+    "name": "Kafka",
+    "url": "https://kafka.apache.org/"
+  }
+]

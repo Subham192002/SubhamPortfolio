@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Spring Boot Microservices Architecture Explained",
+        "slug": "spring-boot-microservices-architecture-explained",
+        "summary": "Learn how to design scalable microservices using Spring Boot, Eureka, Gateway and Feign Clients.",
+        "content": "<h2>Introduction</h2><p>Microservices architecture helps build scalable and maintainable applications by splitting large systems into smaller independent services.</p><h2>Benefits</h2><ul><li>Independent Deployment</li><li>Scalability</li><li>Fault Isolation</li></ul>",
+        "picture": {
+          "data": {
+            "attributes": {
+              "url": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+              "formats": {
+                "small": {
+                  "url": "https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+                }
+              }
+            }
+          }
+        },
+        "seo": {
+          "keywords": "spring boot,microservices,eureka,gateway,java"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "JWT Authentication with Spring Security",
+        "slug": "jwt-authentication-spring-security",
+        "summary": "Secure your REST APIs using JWT authentication and Spring Security.",
+        "content": "<h2>JWT Authentication</h2><p>JWT is a compact and secure way of transmitting information between parties as JSON objects.</p>",
+        "picture": {
+          "data": {
+            "attributes": {
+              "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+              "formats": {
+                "small": {
+                  "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                }
+              }
+            }
+          }
+        },
+        "seo": {
+          "keywords": "jwt,spring security,authentication,authorization"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "Apache Kafka for Java Developers",
+        "slug": "apache-kafka-for-java-developers",
+        "summary": "Understand Kafka topics, partitions, producers and consumers.",
+        "content": "<h2>What is Kafka?</h2><p>Apache Kafka is a distributed event streaming platform used for real-time data pipelines and streaming applications.</p>",
+        "picture": {
+          "data": {
+            "attributes": {
+              "url": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+              "formats": {
+                "small": {
+                  "url": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+                }
+              }
+            }
+          }
+        },
+        "seo": {
+          "keywords": "kafka,event driven,messaging,microservices"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "title": "Hibernate vs JPA Explained",
+        "slug": "hibernate-vs-jpa-explained",
+        "summary": "Learn the differences between JPA specification and Hibernate implementation.",
+        "content": "<h2>JPA vs Hibernate</h2><p>JPA is a specification while Hibernate is one of its most popular implementations.</p>",
+        "picture": {
+          "data": {
+            "attributes": {
+              "url": "https://images.unsplash.com/photo-1516116216624-53e697fedbea",
+              "formats": {
+                "small": {
+                  "url": "https://images.unsplash.com/photo-1516116216624-53e697fedbea"
+                }
+              }
+            }
+          }
+        },
+        "seo": {
+          "keywords": "hibernate,jpa,java,persistence"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "title": "SonarQube Code Quality Best Practices",
+        "slug": "sonarqube-code-quality-best-practices",
+        "summary": "Improve maintainability, reliability and security using SonarQube.",
+        "content": "<h2>Why SonarQube?</h2><p>SonarQube helps detect bugs, code smells and vulnerabilities before production deployment.</p>",
+        "picture": {
+          "data": {
+            "attributes": {
+              "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+              "formats": {
+                "small": {
+                  "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                }
+              }
+            }
+          }
+        },
+        "seo": {
+          "keywords": "sonarqube,clean code,code quality,java"
+        }
+      }
+    }
+  ]
+}
