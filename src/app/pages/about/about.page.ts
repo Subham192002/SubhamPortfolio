@@ -1,110 +1,171 @@
-import { NgFor } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'about',
-  template: `
-  <section class="flex flex-col max-w-screen-lg justify-between mx-auto gap-16 dark:text-gray-200 overflow-y-hidden">
-
-    <div class="flex flex-col gap-5">
-      <h1 class="text-2xl font-semibold dark:text-white">About Me</h1>
-
-      <p class="justify-start">
-        I'm Subham Mishra, a Java Backend Developer specializing in Spring Boot,
-        Microservices, Oracle, PostgreSQL and Angular. I enjoy building scalable
-        enterprise applications, designing REST APIs and solving complex business problems
-        through clean and maintainable code. 🚀
-      </p>
-
-      <p *ngFor="let a of aboutDetails">
-        <b class="dark:text-white text-black">{{a.title}}</b>
-        <br />
-        {{a.desc}}
-      </p>
-    </div>
-
-    <div class="flex flex-col gap-5">
-      <h1 class="text-2xl font-semibold dark:text-white">
-        Professional Highlights
-      </h1>
-
-      <ul class="list-disc pl-5 space-y-2">
-        <li>2+ Years of Professional Experience</li>
-        <li>Spring Boot & Microservices Development</li>
-        <li>Oracle & PostgreSQL Database Design</li>
-        <li>Angular Frontend Development</li>
-        <li>REST API Development & Integration</li>
-        <li>Banking & Financial Domain Experience</li>
-      </ul>
-    </div>
-
-    <div class="flex flex-col gap-5">
-      <h1 class="text-2xl font-semibold dark:text-white">
-        Contact Information
-      </h1>
-
-      @for(c of contactInfo; track $index){
-      <p>
-        <b class="dark:text-white text-black">{{c.title}}:</b>
-        <br />
-        <a [href]="c.link" class="hover:underline" target="_blank">
-          {{c.desc}}
-        </a>
-      </p>
-      }
-    </div>
-
-  </section>
-`,
-  encapsulation: ViewEncapsulation.None,
+  standalone: true,
   imports: [NgFor],
-  standalone: true
+  encapsulation: ViewEncapsulation.None,
+  template: `
+    <section class="max-w-screen-lg mx-auto">
+
+      <div class="mb-12">
+        <h1
+          class="text-primary mb-3 mt-2  text-3xl font-semibold tracking-tight lg:text-4xl lg:leading-snug dark:text-white">
+          Work Experience
+        </h1>
+
+        <p class="text-gray-400 max-w-3xl leading-8 mx-auto ">
+          A journey from Associate Software Developer to Software Engineer,
+          delivering enterprise banking, HRMS and API Management solutions
+          using Java, Spring Boot, Microservices and Angular.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-12">
+
+        @for(exp of experiences; track $index; let isLast = $last){
+
+        <div class="relative pl-8">
+
+          <div
+            class="absolute left-0 top-1 w-4 h-4 rounded-full border-4 border-primary-500 bg-slate-950">
+          </div>
+
+          @if(!isLast){
+          <div
+            class="absolute left-[7px] top-5 w-[2px] h-[calc(100%+3rem)] bg-primary-500">
+          </div>
+          }
+
+          <div class="flex flex-col gap-3">
+
+            <p class="text-primary-600 dark:text-primary-400 text-base font-bold">
+              {{exp.duration}}
+            </p>
+
+            <p class="text-gray-500 text-sm">
+              {{exp.period}}
+            </p>
+
+            <h2 class="text-2xl font-bold dark:text-white">
+              {{exp.role}}
+            </h2>
+
+            <p class="text-primary-600 dark:text-primary-400 text-lg">
+              {{exp.company}}
+            </p>
+
+            <div class="flex flex-col gap-3 mt-2">
+
+              @for(item of exp.responsibilities; track $index){
+              <p class="dark:text-gray-300 text-gray-700">
+                → {{item}}
+              </p>
+              }
+
+            </div>
+
+            <div class="mt-3">
+              <span
+                class="inline-flex items-center px-3 py-2 rounded-md border border-amber-500/40 bg-amber-500/10 text-amber-400 text-sm font-medium">
+                {{exp.badge}}
+              </span>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-3">
+
+              @for(tech of exp.technologies; track $index){
+        <span
+          class="px-3 py-1 rounded-lg
+          border border-gray-300 dark:border-gray-700
+          bg-white dark:bg-gray-900/30
+          text-primary-700 dark:text-primary-300
+          text-sm font-medium
+          transition-all duration-300 ease-out
+          hover:-translate-y-1
+          hover:scale-105
+          hover:border-brand-primary
+          hover:text-brand-primary
+          hover:bg-brand-primary/10">
+            {{tech}}
+        </span>
+              }
+
+            </div>
+
+          </div>
+
+        </div>
+
+        }
+
+      </div>
+
+    </section>
+  `
 })
 export class AboutPage {
 
-  public aboutDetails = [
+  experiences = [
     {
-      title: 'What I Do',
-      desc: `I develop enterprise-grade backend applications using Java, Spring Boot and Microservices architecture. My experience includes designing REST APIs, database optimization, security implementation and building scalable solutions for banking and financial systems.`
+      duration: 'Jan 2025 → Present',
+      period: 'Current',
+      role: 'Software Engineer I',
+      company: 'Interland Technology Services Pvt. Ltd.',
+      badge: '🚀 Working on Escrow & Payzo HR Management Systems',
+      responsibilities: [
+        'Developing and maintaining Spring Boot Microservices and REST APIs.',
+        'Leading development of Escrow Management System for banking clients.',
+        'Building HRMS and Payroll modules for Payzo HR.',
+        'Designing API Management solutions for secure service integration.',
+        'Implementing Kafka-based event-driven workflows and asynchronous processing.',
+        'Working with Oracle and PostgreSQL databases.',
+        'Developing Angular applications and reusable UI components.',
+        'Performing code quality analysis using SonarQube.',
+        'Writing JUnit and Mockito test cases for backend services.',
+        'Participating in production deployments and issue resolution.'
+      ],
+      technologies: [
+        'Java',
+        'Spring Boot',
+        'Microservices',
+        'Kafka',
+        'Angular',
+        'Oracle',
+        'PostgreSQL',
+        'Docker',
+        'JUnit',
+        'SonarQube'
+      ]
     },
     {
-      title: 'Current Expertise',
-      desc: `My primary technology stack includes Java, Spring Boot, Microservices, Angular, Oracle, PostgreSQL and Docker. I focus on writing clean, maintainable and production-ready code following industry best practices.`
-    },
-    {
-      title: 'Always Learning',
-      desc: `Technology evolves rapidly and I continuously invest time learning modern backend architectures, cloud-native development, performance optimization and software design patterns to improve my engineering skills.`
-    },
-    {
-      title: 'Beyond Work',
-      desc: `Outside of development, I enjoy exploring new technologies, building personal projects, contributing to my portfolio, reading technical blogs and preparing for advanced software engineering opportunities.`
-    },
-    {
-      title: 'Why I Code',
-      desc: `I love transforming ideas into real-world applications that solve business problems. Software development gives me the opportunity to create scalable solutions, continuously learn and make a meaningful impact through technology.`
+      duration: 'Jul 2024 → Dec 2024',
+      period: '6 Months',
+      role: 'Associate Software Developer',
+      company: 'Interland Technology Services Pvt. Ltd.',
+      badge: '🏆 Top Performer — Post Training Evaluation',
+      responsibilities: [
+        'Contributed to development of enterprise banking and escrow modules.',
+        'Developed REST APIs using Spring Boot, Hibernate and JPA.',
+        'Implemented Angular screens and reusable frontend components.',
+        'Worked extensively with Oracle Database, JPQL and Specifications.',
+        'Integrated backend services with frontend applications.',
+        'Participated in requirement analysis, development and testing.',
+        'Resolved production defects and optimized application performance.',
+        'Collaborated closely with senior developers and business teams.'
+      ],
+      technologies: [
+        'Java',
+        'Spring Boot',
+        'Angular',
+        'Oracle',
+        'Hibernate',
+        'JPA',
+        'Swagger',
+        'Git'
+      ]
     }
   ];
 
-  public contactInfo = [
-    {
-      title: 'Location',
-      desc: 'Odisha, India',
-      link: 'https://maps.google.com'
-    },
-    {
-      title: 'Email',
-      desc: 'subham19200212345@gmail.com',
-      link: 'mailto:subham@gmail.com'
-    },
-    {
-      title: 'GitHub',
-      desc: 'github.com/subham192002',
-      link: 'https://github.com/Subham192002'
-    },
-    {
-      title: 'LinkedIn',
-      desc: 'linkedin.com/in/subham-kumar-mishra',
-      link: 'https://www.linkedin.com/in/subham-kumar-mishra-a194a2311/'
-    }
-  ];
 }
