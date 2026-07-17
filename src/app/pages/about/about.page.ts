@@ -15,7 +15,7 @@ import { NgFor } from '@angular/common';
           Work Experience
         </h1>
 
-        <p class="text-gray-400 max-w-3xl leading-8 mx-auto ">
+        <p class="text-gray-400 max-w-3xl leading-8  ">
           A journey from Associate Software Developer to Software Engineer,
           delivering enterprise banking, HRMS and API Management solutions
           using Java, Spring Boot, Microservices and Angular.
