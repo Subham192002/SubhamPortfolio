@@ -32,12 +32,12 @@ import { ImageSkeletonDirective } from '@core/directives/image-skeleton.directiv
           </div>
         </a>
         <div>
-          <h1 class="font-semibold text-3xl md:text-4xl md:!leading-[120%] lg:text-5xl  max-w-4xl">
+          <h3 class="font-semibold text-primary-800 dark:text-primary-200 md:text-2xl md:!leading-[100%] lg:text-4xl  max-w-4xl">
             {{ data.title }}
-          </h1>
+          </h3>
         </div>
       </header>
-      <div class="flex flex-col gap-3 text-lg py-6">
+      <div class="flex flex-col gap-3 text-lg py-6 dark:text-gray-300 text-gray-700">
         <prose [data]="data.content"></prose>
       </div>
     </div>

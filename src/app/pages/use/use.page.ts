@@ -16,7 +16,7 @@ import { Logo } from '@shared/components/logo/logo';
     <p class="dark:text-white text-black">
       This website is created with Angular and Tailwind CSS. It's hosted on AWS
       S3, and if you're curious, feel free to explore the source code on
-      <a class="underline" href="https://github.com/Subham192002" target="_blank"
+      <a class="underline" href="https://github.com/Subham192002/SubhamPortfolio" target="_blank"
         >GitHub</a
       >.
     </p>

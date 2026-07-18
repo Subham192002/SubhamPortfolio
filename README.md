@@ -3,8 +3,8 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./preview-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="./preview.png">
-  <img alt="Website preview" src="./preview.png">
+  <source media="(prefers-color-scheme: light)" srcset="./preview-dark.png">
+  <img alt="Website preview" src="./preview-dark.png">
 </picture>
 
 ## Stack
@@ -37,19 +37,9 @@ This application requires Node.js v18.13+.
 
 ```bash
 npm install -g @angular/cli
-git clone https://github.com/marckevinflores/kevinflor.es.git
-cd kevinflor.es
+git clone https://github.com/Subham192002/SubhamPortfolio.git
 npm install
-```
-
-Before starting the application, you need to rename the files inside the `src/environments` directory. Remove the `.bak` file extension from `environment.ts.bak` and `environment.development.ts.bak`. Then run:
-```bash
- npm start
 ```
 
 Wait to compile and go to http://localhost:4200 after compile finish
 
-
-## Previous versions
-
-my previous versions of this website can be found at [marckevinflores/prev-websites](https://github.com/marckevinflores/prev-websites)
