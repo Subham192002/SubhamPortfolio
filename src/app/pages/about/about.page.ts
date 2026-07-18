@@ -102,6 +102,82 @@ import { NgFor } from '@angular/common';
 
       </div>
 
+      <!-- Education -->
+
+<div class="mt-20 mb-12">
+  <h2 class="text-primary mb-3 text-3xl font-semibold tracking-tight dark:text-white">
+    Education
+  </h2>
+
+  <p class="text-gray-400 max-w-3xl leading-8">
+    My academic journey that built the foundation for my software engineering career.
+  </p>
+</div>
+
+<div class="flex flex-col gap-12">
+
+  @for(edu of education; track $index; let isLast = $last){
+
+  <div class="relative pl-8">
+
+    <div
+      class="absolute left-0 top-1 w-4 h-4 rounded-full border-4 border-primary-500 bg-slate-950">
+    </div>
+
+    @if(!isLast){
+    <div
+      class="absolute left-[7px] top-5 w-[2px] h-[calc(100%+3rem)] bg-primary-500">
+    </div>
+    }
+
+    <div class="flex flex-col gap-3">
+
+      <p class="text-primary-600 dark:text-primary-400 text-base font-bold">
+        {{edu.duration}}
+      </p>
+
+      <h2 class="text-2xl font-bold dark:text-white">
+        {{edu.degree}}
+      </h2>
+
+      <p class="text-primary-600 dark:text-primary-400 text-lg">
+        {{edu.college}}
+      </p>
+
+      
+      <div class="mt-3">
+              <span
+                class="inline-flex items-center px-3 py-2 rounded-md border border-amber-500/40 bg-amber-500/10 text-amber-400 text-sm font-medium">
+                {{edu.specialization}}
+              </span>
+  
+</div>
+
+      <p class="text-gray-500">
+        {{edu.description}}
+      </p>
+
+      <div class="mt-3">
+  <div
+    class="inline-flex items-center justify-between gap-10 min-w-[520px]
+           px-4 py-3 rounded-lg
+           border border-emerald-500/40
+           bg-emerald-500/10
+           text-emerald-400">
+
+    <span class="font-semibold">{{edu.cgpa}}</span>
+
+  </div>
+</div>
+
+    </div>
+
+  </div>
+
+  }
+
+</div>
+
     </section>
   `
 })
@@ -167,5 +243,17 @@ export class AboutPage {
       ]
     }
   ];
+
+  education = [
+  {
+    duration: '2020 → 2024',
+    degree: 'Bachelor of Technology (B.Tech)',
+    college: 'Biju Patnaik University of Technology (BPUT)',
+    description:
+      'Graduated in Computer Science & Engineering with a strong foundation in Data Structures, Algorithms, Database Management Systems, Operating Systems, Computer Networks and Software Engineering.',
+      specialization: '🎓 Computer Science & Engineering',
+      cgpa: 'CGPA: 9.0 / 10.0'
+  }
+];
 
 }
