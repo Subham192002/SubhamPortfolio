@@ -1,5 +1,3 @@
-# [kevinflor.es](https://kevinflor.es)
-
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./preview-dark.png">
