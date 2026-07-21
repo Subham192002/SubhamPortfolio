@@ -1,7 +1,5 @@
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./preview-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="./preview-dark.png">
   <img alt="Website preview" src="./preview-dark.png">
 </picture>
 
